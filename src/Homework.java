@@ -1,6 +1,6 @@
-import Zoo.Animal;
-import Zoo.Lion;
-import Zoo.Parrot;
+import zoo.Animal;
+import zoo.Lion;
+import zoo.Parrot;
 import bank.Account;
 import bank.CreditAccount;
 import bank.SavingsAccount;

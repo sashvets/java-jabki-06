@@ -1,4 +1,4 @@
-package Zoo;
+package zoo;
 
 public class Parrot extends Animal {
     public Parrot(String name, int age) {

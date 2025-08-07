@@ -24,7 +24,7 @@ public class Account {
                     String.format("Сумма снятия %.2f должна быть больше нуля", amount));
         } else if (amount > this.balance) {
             throw new IllegalArgumentException(
-                    String.format("Cумма снятия %.2f, не может превышать баланса %.2f", amount, this.balance));
+                    String.format("Cумма снятия %.2f, не может превышать баланс %.2f", amount, this.balance));
         } else {
             this.balance -= amount;
         }

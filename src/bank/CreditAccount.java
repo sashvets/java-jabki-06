@@ -14,8 +14,10 @@ public class CreditAccount extends Account {
 
     @Override
     public void withdraw(double amount) {
-        if (balance - amount >= -this.creditLimit) {
+        if (amount <= balance) {
             super.withdraw(amount);
+        } else if (amount <= balance + this.creditLimit) {
+            balance -= amount;
         } else {
             throw new IllegalArgumentException(
                     String.format("Запрошена сумма превышающая кредитный лимит, доступно: %.2f. Запрошено: %.2f", balance + this.creditLimit, amount));

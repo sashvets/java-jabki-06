@@ -4,7 +4,7 @@ import zoo.Parrot;
 import bank.Account;
 import bank.CreditAccount;
 import bank.SavingsAccount;
-import delivery.DeliveryUtl;
+import delivery.DeliveryUtil;
 import delivery.Drone;
 import delivery.Truck;
 import delivery.Vehicle;
@@ -56,8 +56,8 @@ public class Homework {
         Drone drone = new Drone(1, 1);
         drone.deliver("Джомолунгма");
 
-        DeliveryUtl.startDelivery(truck, "Казань");
-        DeliveryUtl.startDelivery(drone, "Камчатка");
+        DeliveryUtil.startDelivery(truck, "Казань");
+        DeliveryUtil.startDelivery(drone, "Камчатка");
 
         Lion lion = new Lion("Барсик", 5);
         lion.makeSound();

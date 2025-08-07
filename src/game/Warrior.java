@@ -25,8 +25,9 @@ public class Warrior extends Character {
             double local_damage = this.blocked ? damage * 0.3 : damage;
             super.takeDamage(local_damage);
         }
-        if (this.blocked == true) {
-        this.blocked = false;
-        System.out.printf("%s: Щит опущен.%n", name);}
+        if (this.blocked) {
+            this.blocked = false;
+            System.out.printf("%s: Щит опущен.%n", name);
+        }
     }
 }
